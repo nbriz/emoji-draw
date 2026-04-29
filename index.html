@@ -10,12 +10,12 @@
       let x = nn.mouseX
       let y = nn.mouseY
       let hue = nn.random(360)
-      nn.create('div')
-        .content('😁')
+      nn.create('img')
+        .set('src', 'fish.gif')
         .css('user-select', 'none')
         .hueRotate(hue)
         .position(x, y)
-        .scale(3)
+        .scale(1)
         .rotate(hue)
         .addTo('body')
     }
